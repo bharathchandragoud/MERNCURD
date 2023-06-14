@@ -1,17 +1,17 @@
 // CreateStudent Component for add new student
 
 // Import Modules
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import axios from "axios";
 import StudentForm from "./StudentForm";
 
 // CreateStudent Component
 const CreateStudent = () => {
-  const [formValues, setFormValues] = useState({
+  const formValues ={
     name: "",
     email: "",
     rollno: "",
-  });
+  };
   // onSubmit handler
   const onSubmit = (studentObject) => {
     axios
